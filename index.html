@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class=" h-[92.2vh] relative p-3 w-full flex items-center justify-center flex-col gap-y-8 bg-[#003f45]">
+        <h1 class="text-white flex items-center gap-x-2 tracking-wide font-sans font-[700] text-[30px]">Play <span
+                class=" text-green-500">&</span> Enjoy <img class="h-10 mt-1 w-10" src="/images/happy.png" alt=""></h1>
+        <div class="h-[450px] p-6 px-2 mb-16 w-[340px] bg-[#00484e] shadow-lg rounded-xl ">
+            <div class="flex items-center justify-between">
+                <p class="text-white pl-6 font-sans tracking-wider font-[600] text-[16px]">Trun <span id="turn"
+                        class="text-green-500 font-sans tracking-wider font-[600] text-[17px]">Green</span></p>
+                <h1 id="resetBtn"
+                    class="font-sans tracking-wider font-[600] bg-sky-600 rounded-lg py-2 px-4 mr-2 shadow-lg hover:scale-105 duration-150 cursor-pointer text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                    </svg>
+                </h1>
+            </div>
+            <div class=" grid mt-6 px-10 py-4 place-items-center gap-10 grid-cols-3">
+                <div id="0"
+                    class="box h-[55px] cursor-pointer w-full  rounded-lg flex justify-center items-center  shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="1"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="2"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="3"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="4"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="5"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="6"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="7"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+                <div id="8"
+                    class="box h-[55px] cursor-pointer w-full rounded-lg flex justify-center items-center shadow-lg bg-[#003135] text-[28px]">
+                </div>
+            </div>
+            <div id="victory" class="hidden items-center justify-center mt-5 gap-x-2">
+                <p class="text-white font-sans tracking-wider font-[600] text-[16px]">Won <span id="player"
+                        class="text-green-500 font-sans tracking-wider font-[600] text-[17px]">Green</span> Player</p>
+                <img class="h-11 w-11" src="/images/win.png" alt="">
+            </div>
+            <div id="draw" class="hidden items-center justify-center mt-5 gap-x-2">
+                <p class="text-white font-sans tracking-wider font-[600] text-[16px]">Match <span
+                        class="text-red-600 font-sans tracking-wider font-[700] text-[17px]">Draw</span></p>
+                <img class="h-11 w-11" src="/images/equality.png" alt="">
+            </div>
+        </div>
+        <button
+            class="bg-[#00343a] py-2 font-sans tracking-wide text-[#021c1e] hover:text-gray-200 absolute bottom-2 right-2 font-[500] rounded-md px-4">Provied
+            By Md. Atick</button>
+    </div>
+    <footer class="h-[55px] text-white flex justify-center items-center bg-[#00272b] ">
+        <p class=" tracking-wide">copyright @ by goverment in 2023.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
